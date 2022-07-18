@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    color: #fff;
+    background-color: #343837;
+    line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+p{
+    text-shadow: 0px 0px 6px rgba(26, 1, 26, .8);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgb(37, 0, 37);
+    height: 4em;
+    padding: 1.2em 0;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.flex-nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 3em;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home {
+    background-image: linear-gradient(
+        to top,
+        rgba(22, 8, 93, 0.35),
+        rgba(26, 14, 82, 0.35)),
+    url("/images/1.jpg");
+}
+#about {
+    background-image: linear-gradient(
+        to top,
+        rgba(22, 8, 93, 0.35),
+        rgba(26, 14, 82, 0.35)),
+    url("/images/2.jpg");
+}
+#services {
+    background-image: linear-gradient(
+        to top,
+        rgba(22, 8, 93, 0.35),
+        rgba(26, 14, 82, 0.35)),
+    url("/images/3.jpg");
+}
+#contact {
+    background-image: linear-gradient(
+        to top,
+        rgba(22, 8, 93, 0.35),
+        rgba(26, 14, 82, 0.35)),
+    url("/images/4.jpg");
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS learning - Project #4 Smooth scroll</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="container flex-nav">
+          <div class="logo"><h2>ourgalaxy</h2></div>
+
+          <div class="navbar">
+            <ul>
+              <li class="nav-links"><a href="#home">Home</a></li>
+              <li class="nav-links"><a href="#about">About</a></li>
+              <li class="nav-links"><a href="#services">Services</a></li>
+              <li class="nav-links"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <h1>Milky Way</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo
+            voluptatem cupiditate. Et, perferendis eligendi! Praesentium nam
+            obcaecati at nobis?
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h1>Solar system</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo
+            voluptatem cupiditate. Et, perferendis eligendi! Praesentium nam
+            obcaecati at nobis?
+          </p>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <h1>Earth</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo
+            voluptatem cupiditate. Et, perferendis eligendi! Praesentium nam
+            obcaecati at nobis?
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h1>Starry sky</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo
+            voluptatem cupiditate. Et, perferendis eligendi! Praesentium nam
+            obcaecati at nobis?
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      const scroll = new SmoothScroll('.navbar a[href*="#]', {
+        speed: 3000,
+      })
+    </script>
+  </body>
+</html>
